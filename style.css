@@ -1,0 +1,349 @@
+/* General Styling */
+body {
+    margin: 0; /* Removes default body margin */
+    padding: 0; /* Removes default body padding */
+    font-family: Arial, sans-serif; /* Sets the font family */
+    height: 100%; /* Full height to allow for scrolling */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents background from repeating */
+    background-size: cover; /* Covers the entire body with the background */
+    background-attachment: fixed; /* Fixes the background so it doesn’t scroll */
+    box-sizing: border-box; /* Applies box-sizing to all elements */
+}
+
+/* Header Styling */
+header {
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    text-align: center; /* Center-aligns the header text */
+    padding: 40px; /* Padding around the header */
+    background-color: rgba(0, 0, 0, 0); /* Semi-transparent background */
+    color: bisque; /* Text color */
+    height: 100vh; /* Full viewport height */
+}
+
+/* Header Headings */
+.heading-image {
+    width: 100%; /* Adjust the width as needed */
+    max-width: 800px; /* Set a maximum width for large screens */
+    height: auto; /* Maintain aspect ratio */
+}
+
+header h3 {
+    margin-bottom: 40px; /* Space below subheading */
+    font-size: 25px; /* Font size for subheading */
+    color: #4d0702;
+     
+    border-radius: 10px;
+    margin-bottom: 8px;
+}
+header h4{
+    color: #b5190e;
+    font-size: 25px;
+    margin-top: 1px;
+  
+    border-radius: 10px;
+}
+
+
+/* Inline Navigation */
+nav {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space out left and right sections */
+    align-items: center; /* Center items vertically */
+    width: 100%; /* Full width */
+    max-width: 1200px; /* Maximum width for nav */
+    margin: 20px auto; /* Center nav with auto margins */
+    padding: 0 20px; /* Horizontal padding */
+}
+
+.left-nav {
+    list-style-type: none; 
+    padding: 0; 
+    display: grid; 
+    gap: 30px;
+    margin-left: 40%; 
+    
+}
+.right-nav {
+    list-style-type: none; 
+    padding: 0; 
+    display: grid; 
+    gap: 30px; 
+    margin-right: 30%; 
+    border-left: #b5190e ridge 10px;
+    padding-left: 5px;
+}
+ 
+nav ul li {
+    display:grid; /* Ensure links stay inline */
+}
+
+nav ul li a {
+    text-decoration: none; /* Removes underline */
+    color: bisque; /* Link color */
+    font-size: 22px; /* Font size for links */
+}
+
+nav ul li a:hover {
+    color: #9c6220; /* Hover color for links */
+}
+
+/* Cards Section */
+.card-section {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    flex-direction: column; /* Stack the cards vertically */
+    padding: 20px; /* Padding around the card section */
+    height: 100vh;
+}
+
+/* Cards Container */
+.card-container {
+    display: grid; /* Grid layout for cards */
+    grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+    gap: 20px; /* Space between the cards */
+    width: 80%; /* Width of the card container */
+    margin: 0 auto; /* Center the card container */
+    height: 100vh;
+}
+
+/* Individual Card Styling */
+.card {
+    padding: 20px; /* Padding inside cards */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for hover effect */
+    color: rgba(0, 0, 0, 0);
+    display: flex; /* Flexbox for card content */
+    flex-direction: column; /* Stack card content vertically */
+    justify-content: center; /* Center align card content */
+    text-align: justify; /* Center align text in cards */
+    background-color: rgba(0, 0, 0, 0.8); /* Card background color */
+
+}
+
+/* Hover Effect for Cards */
+.card:hover {
+    transform: translateY(-5px); /* Lift card on hover */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+    color: bisque;
+    transform: scale(1.1);
+}
+
+/* Card Headings and Text */
+.card h3 {
+    margin-bottom: 10px; /* Space below card heading */
+    color: bisque;
+    text-align: right;
+}
+
+.card p {
+    font-size: 16px; /* Font size for card text */
+    line-height: 1.5; /* Line height for readability */
+}
+
+#Uchi{
+    background-image: url(kuta.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#Tach{
+    background-image: url(tivhc.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#Waki{
+    background-image: url(Wakizashi.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#Noda{
+    background-image: url(no-removebg-preview.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#history{
+    margin-bottom: -125px;
+}
+.Kattype{
+    margin-top: 10%;
+    height: 100vh;
+
+    color: bisque;
+
+}
+.Kattype h1{
+    text-align: center;
+    font-size: 50px;
+    padding-top: 20px;
+
+
+}
+.Kattype .start{
+    text-align: left ;
+    margin: 2%;
+    font-size: 20px;
+    gap: 10px;
+}
+.Kattype .mid{
+    text-align: center;
+    font-size: 20px;
+    
+}
+.Kattype .end{
+    text-align: left;
+    margin: 2%;
+    font-size: 20px;
+    
+}
+.Kattype:hover{
+    background:  rgba(0, 0, 0, 0.5); /* Enhanced shadow on hover */
+    transition:  1s ease-in-out, box-shadow 1s ease-in-out;
+}
+#train{
+    margin-bottom:2%;
+}
+.train{
+    height:100vh;
+    
+    color: bisque;
+}
+.train h1{
+    text-align: center;
+    font-size: 50px;
+    padding-top: 20px;
+
+}
+.train p{
+    text-align: center ;
+    margin: 2%;
+    font-size: 20px;
+    gap: 10px;
+    margin-bottom: -20px;
+}
+.train:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    transition:  1s ease-in-out, box-shadow 1s ease-in-out;
+}
+
+/* Gallery Section Styling */
+.gallery-section {
+    padding: 40px 0;
+    background-color: rgba(0, 0, 0, 0); /* Background for gallery section */
+    color: bisque; /* Text color */
+    margin-top: 5%;
+}
+
+
+.gallery-section h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    width: 80%;
+    margin: 0 auto; /* Center the gallery container */
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow around images */
+    transition: transform 0.3s ease;
+    background-color: black;
+    
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+    border-radius: 8px;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+}
+
+.gallery-caption {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for caption */
+    color: bisque;
+    font-size: 18px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.gallery-item:hover .gallery-caption {
+    background-color: rgba(0, 0, 0, 0.8); /* Darken caption on hover */
+}
+
+footer{
+    color: rgba(244, 213, 142,0.5);
+    text-align: center;
+    background-color: black;
+    border:5px solid black
+}
+ 
+/* Smooth scrolling behavior */
+html {
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+
+/* General styling for video background */
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Keep the video behind the content */
+}
+
+/* Video styling to make it cover the entire page */
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover; /* Ensures the video covers the background */
+}
+
+#thelastone{
+    text-align: center;    
+    font-size: larger;
+    background-color: rgba(0, 0, 0, 0.0);
+    margin: 0px 600px 25px;
+    border: 10px solid rgba(0, 0, 0, 0.0);
+    border-radius: 30px;
+}
+#thelastone a{
+    color: rgb(236, 181, 139);
+}
+#thelastone a:hover{
+    color: brown;
+}
+
+
+
+
+
+
+ 
