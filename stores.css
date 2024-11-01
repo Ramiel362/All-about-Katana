@@ -55,7 +55,6 @@ header h4{
 /* Inline Navigation */
 nav {
     display: inline;
-    
     align-items: center; /* Center items vertically */
     width: 100%; /* Full width */
     max-width: 1200px; /* Maximum width for nav */
@@ -66,22 +65,23 @@ nav {
 }
 nav ul li {
     display:inline; /* Ensure links stay inline */
-
 }
 
 nav ul li a {
     text-decoration: none; /* Removes underline */
+    padding: 10px;
     color: bisque; /* Link color */
     font-size: 24px; /* Font size for links */
     margin-right: 20px;
-    background-color: rgba(0, 0, 0, 0.5);
-    border:  10px solid rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 1);
+    border:  10px ridge rgb(208, 90, 175);
     border-radius: 50px;
+    
 }
 
 nav ul li a:hover {
     text-shadow: none;
-    color: #9c6220; /* Hover color for links */
+    color: palevioletred; /* Hover color for links */
 }
 
 /* Smooth scrolling behavior */
