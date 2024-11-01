@@ -21,7 +21,7 @@ header {
     padding: 40px; /* Padding around the header */
     background-color: rgba(0, 0, 0, 0); /* Semi-transparent background */
     color: bisque; /* Text color */
-    height: 100vh; /* Full viewport height */
+    
 }
 
 /* Header Headings */
@@ -58,10 +58,15 @@ nav {
     align-items: center; /* Center items vertically */
     width: 100%; /* Full width */
     max-width: 1200px; /* Maximum width for nav */
-    margin: 20px auto; /* Center nav with auto margins */
+    margin-right: 20px; /* Center nav with auto margins */
     padding: 0 20px; /* Horizontal padding */
     margin-top: -10px;
     text-shadow: 2px 2px black;
+    justify-content: center;
+    text-align: center;
+    
+    
+    
 }
 nav ul li {
     display:inline; /* Ensure links stay inline */
@@ -73,9 +78,10 @@ nav ul li a {
     color: bisque; /* Link color */
     font-size: 24px; /* Font size for links */
     margin-right: 20px;
-    background-color: rgba(0, 0, 0, 1);
-    border:  10px ridge rgb(208, 90, 175);
+    background-color: black;
+    border: 2px solid darkviolet;
     border-radius: 50px;
+    padding: 20px;
     
 }
 
@@ -87,6 +93,18 @@ nav ul li a:hover {
 /* Smooth scrolling behavior */
 html {
     scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+p{
+    background-color: bisque;
+    border: 2px solid darkred;
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    padding: 30px;
+    margin:  30px ;
+    border-radius: 10px;
+    text-align: center;
+    border-bottom: none;
 }
 
 /* General styling for video background */
@@ -108,6 +126,57 @@ html {
 }
 
 
+.Store{
+    background-color: rgba(0, 0, 0, 0.3);
+    border:2px solid darkred;
+    margin: 30px;
+    padding: 30px;
+    border-radius: 50px;
+
+}
+.Store h1{
+    text-align: center;
+    font-weight: 900;
+    color: black;
+}
+
+/* Store Cards Section */
 
 
+/* Individual Card Styling */
+.card {
+    padding: 30px;
+    background-color: bisque;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    height: 100vh;
+}
 
+.card h2 {
+    font-size: 28px;
+    color: #8B0000;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6; /* Increased line height for readability */
+    margin-bottom: 25px;
+}
+
+.card a {
+    text-decoration: none;
+    padding: 12px 24px;
+    background-color: #8B0000;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.card a:hover {
+    background-color: #b22222;
+    color: white;
+}
