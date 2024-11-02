@@ -202,7 +202,7 @@ nav ul li a:hover {
 .Kattype h1{
     text-align: center;
     font-size: 50px;
-    padding-top: 100px;
+    padding-top: 150px;
 
 
 }
@@ -235,7 +235,7 @@ nav ul li a:hover {
 .train h1{
     text-align: center;
     font-size: 50px;
-    padding-top: 20px;
+    padding-top: 40px;
 
 }
 .train p{
@@ -353,10 +353,3 @@ html {
 #thelastone a:hover{
     color: brown;
 }
-
-
-
-
-
-
- 
