@@ -24,33 +24,143 @@
             <nav>                 
                 <ul>
                     <li><a href="Home.html">Home</a></li>
-                    <li><a href="About.html">About</a></li>
                     <li><a href="Stores.html">Store</a></li>
+                    <li><a href="About.html">About</a></li>
                 </ul>
             </nav>
         </header>
         
-        <!-- Store Cards Section -->
-        <section class="store-cards">
-            <div class="card">
-                <h2>Minikatana.com</h2>
-                <p>Minikatana.com specializes in handcrafted Katanas, offering a variety of miniature and full-sized swords designed with precision and rooted in Japanese tradition. Known for its quality craftsmanship, the store provides an extensive range of Katanas, from decorative pieces to functional swords. Each product showcases unique styles, blending traditional Japanese aesthetics with modern inspirations. Minikatana’s collection appeals to collectors, cosplayers, and enthusiasts alike, featuring themes inspired by popular culture and classic Japanese designs. With a strong community presence, Minikatana emphasizes quality, authenticity, and attention to detail in every piece.
-                    </p>
-                <a href="https://minikatana.com" target="_blank">Visit Minikatana.com</a>
+        <!-- Katana Options Section -->
+        <section class="katana-options" id="katanas">
+            <h1>Personal Favourites</h1>
+            <!-- First Row -->
+            <div class="row">
+                <div class="katana-card" onclick="toggleCardDetails(this)">
+                    <h3>Katana Option 1</h3>
+                    <img src="katana1.jpg" alt="Katana 1">
+                    <div class="details">
+                        <p><strong>Price:</strong> $300</p>
+                        <p><strong>Description:</strong> A high-quality, traditionally crafted Katana with a sharp blade and elegant design.</p>
+                        <a href="katana1.html" target="_blank">More Details</a>
+                    </div>
+                </div>
+                <div class="katana-card" onclick="toggleCardDetails(this)">
+                    <h3>Katana Option 2</h3>
+                    <img src="katana2.jpg" alt="Katana 2">
+                    <div class="details">
+                        <p><strong>Price:</strong> $450</p>
+                        <p><strong>Description:</strong> Crafted from premium steel, this Katana is known for its durability and traditional aesthetics.</p>
+                        <a href="katana2.html" target="_blank">More Details</a>
+                    </div>
+                </div>
+                <div class="katana-card" onclick="toggleCardDetails(this)">
+                    <h3>Katana Option 3</h3>
+                    <img src="katana3.jpg" alt="Katana 3">
+                    <div class="details">
+                        <p><strong>Price:</strong> $400</p>
+                        <p><strong>Description:</strong> Known for its beautiful hamon pattern and balance, this Katana is ideal for collectors.</p>
+                        <a href="katana3.html" target="_blank">More Details</a>
+                    </div>
+                </div>
+                <div class="katana-card" onclick="toggleCardDetails(this)">
+                    <h3>Katana Option 4</h3>
+                    <img src="katana4.jpg" alt="Katana 4">
+                    <div class="details">
+                        <p><strong>Price:</strong> $350</p>
+                        <p><strong>Description:</strong> A lightweight and functional Katana suitable for practice and display.</p>
+                        <a href="katana4.html" target="_blank">More Details</a>
+                    </div>
+                </div>
             </div>
-            <div class="card">
-                <h2>SamuraiSword Store</h2>
-                <p>SamuraiSword Store is dedicated to authentic Japanese sword-making, specializing in traditional Katanas, Wakizashis, and Tantos crafted by skilled artisans. Each sword is made with high-quality materials, often using high-carbon or folded steel, ensuring both durability and a sharp edge suitable for practice and collection. SamuraiSword Shop focuses on preserving the ancient techniques of Japanese forging, offering customizable options for handle, blade, and sheath styles to create a unique and personalized piece. Ideal for enthusiasts and martial artists, the store upholds the art and history of Japanese swords in each handcrafted product.
-                </p>
-                <a href="https://samuraiswordshop.com" target="_blank">Visit SamuraiSword Shop</a>
+            
+            
+            <!-- Repeat two more rows similarly -->
+             <h1>Minikatana.store</h1>
+            <div class="row">
+                <div class="katana-card" onclick="toggleCardDetails(this)">
+                    <h3>Katana Option 1</h3>
+                    <img src="katana1.jpg" alt="Katana 1">
+                    <div class="details">
+                        <p><strong>Price:</strong> $300</p>
+                        <p><strong>Description:</strong> A high-quality, traditionally crafted Katana with a sharp blade and elegant design.</p>
+                        <a href="katana1.html" target="_blank">More Details</a>
+                    </div>
+                </div>
+                <div class="katana-card" onclick="toggleCardDetails(this)">
+                    <h3>Katana Option 2</h3>
+                    <img src="katana2.jpg" alt="Katana 2">
+                    <div class="details">
+                        <p><strong>Price:</strong> $450</p>
+                        <p><strong>Description:</strong> Crafted from premium steel, this Katana is known for its durability and traditional aesthetics.</p>
+                        <a href="katana2.html" target="_blank">More Details</a>
+                    </div>
+                </div>
+                <div class="katana-card" onclick="toggleCardDetails(this)">
+                    <h3>Katana Option 3</h3>
+                    <img src="katana3.jpg" alt="Katana 3">
+                    <div class="details">
+                        <p><strong>Price:</strong> $400</p>
+                        <p><strong>Description:</strong> Known for its beautiful hamon pattern and balance, this Katana is ideal for collectors.</p>
+                        <a href="katana3.html" target="_blank">More Details</a>
+                    </div>
+                </div>
+                <div class="katana-card" onclick="toggleCardDetails(this)">
+                    <h3>Katana Option 4</h3>
+                    <img src="katana4.jpg" alt="Katana 4">
+                    <div class="details">
+                        <p><strong>Price:</strong> $350</p>
+                        <p><strong>Description:</strong> A lightweight and functional Katana suitable for practice and display.</p>
+                        <a href="katana4.html" target="_blank">More Details</a>
+                    </div>
+                </div>
             </div>
+            <h1>SamuraiSword.Shop</h1>
+            <div class="row">
+                <div class="katana-card" onclick="toggleCardDetails(this)">
+                    <h3>Katana Option 1</h3>
+                    <img src="katana1.jpg" alt="Katana 1">
+                    <div class="details">
+                        <p><strong>Price:</strong> $300</p>
+                        <p><strong>Description:</strong> A high-quality, traditionally crafted Katana with a sharp blade and elegant design.</p>
+                        <a href="katana1.html" target="_blank">More Details</a>
+                    </div>
+                </div>
+                <div class="katana-card" onclick="toggleCardDetails(this)">
+                    <h3>Katana Option 2</h3>
+                    <img src="katana2.jpg" alt="Katana 2">
+                    <div class="details">
+                        <p><strong>Price:</strong> $450</p>
+                        <p><strong>Description:</strong> Crafted from premium steel, this Katana is known for its durability and traditional aesthetics.</p>
+                        <a href="katana2.html" target="_blank">More Details</a>
+                    </div>
+                </div>
+                <div class="katana-card" onclick="toggleCardDetails(this)">
+                    <h3>Katana Option 3</h3>
+                    <img src="katana3.jpg" alt="Katana 3">
+                    <div class="details">
+                        <p><strong>Price:</strong> $400</p>
+                        <p><strong>Description:</strong> Known for its beautiful hamon pattern and balance, this Katana is ideal for collectors.</p>
+                        <a href="katana3.html" target="_blank">More Details</a>
+                    </div>
+                </div>
+                <div class="katana-card" onclick="toggleCardDetails(this)">
+                    <h3>Katana Option 4</h3>
+                    <img src="katana4.jpg" alt="Katana 4">
+                    <div class="details">
+                        <p><strong>Price:</strong> $350</p>
+                        <p><strong>Description:</strong> A lightweight and functional Katana suitable for practice and display.</p>
+                        <a href="katana4.html" target="_blank">More Details</a>
+                    </div>
+                </div>
+            </div>a
         </section>
     </div>
 
 </body>
 <script>
-    window.onload = function() {
-        window.scrollTo(0, 0); // Scroll to top when the page loads
+    function toggleCardDetails(card) {
+        const details = card.querySelector('.details');
+        details.style.display = details.style.display === 'block' ? 'none' : 'block';
     }
 </script>
 </html>
