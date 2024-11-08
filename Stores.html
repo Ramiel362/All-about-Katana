@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stores-ABK</title>
-    <link rel="icon" type="image/png" href="ABK Logo.png"/>
+    <title>Stores - Katana no Subete</title>
     <link rel="stylesheet" href="stores.css">
 </head>
 <body>
@@ -15,152 +14,125 @@
         </video>
     </div>
 
-    <div class="container">
+    <div class="container" id="zero">
         <header>
             <h3>Katana no Subete</h3>
             <img src="mit.png" alt="カタナのすべて" class="heading-image">
             <h4>All About Katana</h4>
-            
             <nav>                 
                 <ul>
                     <li><a href="Home.html">Home</a></li>
                     <li><a href="Stores.html">Store</a></li>
                     <li><a href="About.html">About</a></li>
                 </ul>
+                <ul id="nd">
+                    <li><a href="#one">Personal Favourites</a></li>
+                    <li><a href="#two">MiniKatana.Store</a></li>
+
+                </ul>
             </nav>
         </header>
         
         <!-- Katana Options Section -->
-        <section class="katana-options" id="katanas">
-            <h1>Personal Favourites</h1>
-            <!-- First Row -->
+        <section class="katana-options" id="one">
+            <a href="#zero" style="text-decoration: none; "><h1>Personal Favourites</h1></a>
             <div class="row">
-                <div class="katana-card" onclick="toggleCardDetails(this)">
-                    <h3>Katana Option 1</h3>
+
+                <div class="katana-card" onclick="openModal('katana3.webp', 'Red Fury', '$400', 'Known for its beautiful hamon pattern and balance, this Katana is ideal for collectors.')">
+                    <h3>Red Fury Katana</h3>
+                    <img src="katana3.webp" alt="Katana 3">
+                </div>
+                <div class="katana-card" onclick="openModal('katana1.jpg', 'HF Murasama', '$300', 'HF Murasama, A legendary Red Katana replicated into real-life from the game Metal Gear Rising: Revengeance')">
+                    <h3>HF Murasama</h3>
                     <img src="katana1.jpg" alt="Katana 1">
-                    <div class="details">
-                        <p><strong>Price:</strong> $300</p>
-                        <p><strong>Description:</strong> A high-quality, traditionally crafted Katana with a sharp blade and elegant design.</p>
-                        <a href="katana1.html" target="_blank">More Details</a>
-                    </div>
                 </div>
-                <div class="katana-card" onclick="toggleCardDetails(this)">
-                    <h3>Katana Option 2</h3>
-                    <img src="katana2.jpg" alt="Katana 2">
-                    <div class="details">
-                        <p><strong>Price:</strong> $450</p>
-                        <p><strong>Description:</strong> Crafted from premium steel, this Katana is known for its durability and traditional aesthetics.</p>
-                        <a href="katana2.html" target="_blank">More Details</a>
-                    </div>
+                
+                <div class="katana-card" onclick="openModal('katana2.webp', 'Yamato DMC', '$450', 'Crafted from premium steel, this Katana is known for its durability and traditional aesthetics.')">
+                    <h3>Yamato DMC</h3>
+                    <img src="katana2.webp" alt="Katana 2">
                 </div>
-                <div class="katana-card" onclick="toggleCardDetails(this)">
-                    <h3>Katana Option 3</h3>
-                    <img src="katana3.jpg" alt="Katana 3">
-                    <div class="details">
-                        <p><strong>Price:</strong> $400</p>
-                        <p><strong>Description:</strong> Known for its beautiful hamon pattern and balance, this Katana is ideal for collectors.</p>
-                        <a href="katana3.html" target="_blank">More Details</a>
-                    </div>
-                </div>
-                <div class="katana-card" onclick="toggleCardDetails(this)">
-                    <h3>Katana Option 4</h3>
+                
+                <div class="katana-card" onclick="openModal('katana4.jpg', 'Muichiro Katana from Demon Slayer', '$350', 'A lightweight and functional Katana suitable for practice and display.')">
+                    <h3>Muichiro Katana</h3>
                     <img src="katana4.jpg" alt="Katana 4">
-                    <div class="details">
-                        <p><strong>Price:</strong> $350</p>
-                        <p><strong>Description:</strong> A lightweight and functional Katana suitable for practice and display.</p>
-                        <a href="katana4.html" target="_blank">More Details</a>
-                    </div>
                 </div>
             </div>
+            <div id="two">
+              <a href="#zero" style="text-decoration: none;"><h1>MiniKatana.Store</h1></a>
+              <div class="row">
+                <div class="katana-card" onclick="openModal('katana5.webp', 'Stormbringer Katana', '$300', 'A high-quality, traditionally crafted Katana with a sharp blade and elegant design.')">
+                    <h3>Stormbringer Katana</h3>
+                    <img src="katana5.webp" alt="Katana 5">
+                </div>
+                <div class="katana-card" onclick="openModal('katana6.webp', 'Gold Dragon Katana', '$450', 'Crafted from premium steel and gold-hilted, this Katana is known for its durability and traditional aesthetics.')">
+                    <h3>Gold Dragon Katana</h3>
+                    <img src="katana6.webp" alt="Katana 6">
+                </div>
+                <div class="katana-card" onclick="openModal('katana7.webp', 'Onyx Katana', '$400', 'Known for its beautiful hamon pattern and balance, this Katana is ideal for collectors.')">
+                    <h3>Onyx Katana</h3>
+                    <img src="katana7.webp" alt="Katana 7">
+                </div>
+                <div class="katana-card" onclick="openModal('katana8.webp', 'Arashi Katana', '$350', 'A lightweight and functional Katana suitable for practice and display.')">
+                    <h3>Arashi Katana</h3>
+                    <img src="katana8.webp" alt="Katana 8">
+                </div>
+              </div>
+            </div>          
             
-            
-            <!-- Repeat two more rows similarly -->
-             <h1>Minikatana.store</h1>
-            <div class="row">
-                <div class="katana-card" onclick="toggleCardDetails(this)">
-                    <h3>Katana Option 1</h3>
-                    <img src="katana1.jpg" alt="Katana 1">
-                    <div class="details">
-                        <p><strong>Price:</strong> $300</p>
-                        <p><strong>Description:</strong> A high-quality, traditionally crafted Katana with a sharp blade and elegant design.</p>
-                        <a href="katana1.html" target="_blank">More Details</a>
-                    </div>
-                </div>
-                <div class="katana-card" onclick="toggleCardDetails(this)">
-                    <h3>Katana Option 2</h3>
-                    <img src="katana2.jpg" alt="Katana 2">
-                    <div class="details">
-                        <p><strong>Price:</strong> $450</p>
-                        <p><strong>Description:</strong> Crafted from premium steel, this Katana is known for its durability and traditional aesthetics.</p>
-                        <a href="katana2.html" target="_blank">More Details</a>
-                    </div>
-                </div>
-                <div class="katana-card" onclick="toggleCardDetails(this)">
-                    <h3>Katana Option 3</h3>
-                    <img src="katana3.jpg" alt="Katana 3">
-                    <div class="details">
-                        <p><strong>Price:</strong> $400</p>
-                        <p><strong>Description:</strong> Known for its beautiful hamon pattern and balance, this Katana is ideal for collectors.</p>
-                        <a href="katana3.html" target="_blank">More Details</a>
-                    </div>
-                </div>
-                <div class="katana-card" onclick="toggleCardDetails(this)">
-                    <h3>Katana Option 4</h3>
-                    <img src="katana4.jpg" alt="Katana 4">
-                    <div class="details">
-                        <p><strong>Price:</strong> $350</p>
-                        <p><strong>Description:</strong> A lightweight and functional Katana suitable for practice and display.</p>
-                        <a href="katana4.html" target="_blank">More Details</a>
-                    </div>
-                </div>
-            </div>
-            <h1>SamuraiSword.Shop</h1>
-            <div class="row">
-                <div class="katana-card" onclick="toggleCardDetails(this)">
-                    <h3>Katana Option 1</h3>
-                    <img src="katana1.jpg" alt="Katana 1">
-                    <div class="details">
-                        <p><strong>Price:</strong> $300</p>
-                        <p><strong>Description:</strong> A high-quality, traditionally crafted Katana with a sharp blade and elegant design.</p>
-                        <a href="katana1.html" target="_blank">More Details</a>
-                    </div>
-                </div>
-                <div class="katana-card" onclick="toggleCardDetails(this)">
-                    <h3>Katana Option 2</h3>
-                    <img src="katana2.jpg" alt="Katana 2">
-                    <div class="details">
-                        <p><strong>Price:</strong> $450</p>
-                        <p><strong>Description:</strong> Crafted from premium steel, this Katana is known for its durability and traditional aesthetics.</p>
-                        <a href="katana2.html" target="_blank">More Details</a>
-                    </div>
-                </div>
-                <div class="katana-card" onclick="toggleCardDetails(this)">
-                    <h3>Katana Option 3</h3>
-                    <img src="katana3.jpg" alt="Katana 3">
-                    <div class="details">
-                        <p><strong>Price:</strong> $400</p>
-                        <p><strong>Description:</strong> Known for its beautiful hamon pattern and balance, this Katana is ideal for collectors.</p>
-                        <a href="katana3.html" target="_blank">More Details</a>
-                    </div>
-                </div>
-                <div class="katana-card" onclick="toggleCardDetails(this)">
-                    <h3>Katana Option 4</h3>
-                    <img src="katana4.jpg" alt="Katana 4">
-                    <div class="details">
-                        <p><strong>Price:</strong> $350</p>
-                        <p><strong>Description:</strong> A lightweight and functional Katana suitable for practice and display.</p>
-                        <a href="katana4.html" target="_blank">More Details</a>
-                    </div>
-                </div>
-            </div>a
         </section>
     </div>
 
+    <!-- Modal for full-page card details -->
+    <div id="katanaModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-left">
+                <img id="modal-img" src="" alt="Katana Image">
+            </div>
+            <div class="modal-right">
+                <h2 id="modal-title"></h2>
+                <p id="modal-description"></p>
+                <p><strong>Price:</strong> <span id="modal-price"></span></p>
+                <!-- Button to visit the store page -->
+                <button id="store-button" onclick="goToStore()">Visit MiniKatana.store</button>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <p><a href="#zero" style="text-decoration: none;">&copy; 2024 All About Katana. All rights reserved.</a></p>
+</footer>
+    <script>
+        const modal = document.getElementById("katanaModal");
+        const modalImg = document.getElementById("modal-img");
+        const modalTitle = document.getElementById("modal-title");
+        const modalDescription = document.getElementById("modal-description");
+        const modalPrice = document.getElementById("modal-price");
+        let storeLink = "";
+    
+        function openModal(imgSrc, title, price, description) {
+            modalImg.src = imgSrc;
+            modalTitle.textContent = title;
+            modalDescription.textContent = description;
+            modalPrice.textContent = price;
+            storeLink = `https://minikatana.com/`;
+            modal.style.display = "flex";
+        }
+    
+        function closeModal() {
+            modal.style.display = "none";
+        }
+    
+        function goToStore() {
+            if (storeLink) {
+                window.open(storeLink, "_blank");
+            }
+        }
+    
+
+        window.onload = function() {
+            window.scrollTo(0, 0); // Scroll to top when the page loads
+        }
+    </script>
 </body>
-<script>
-    function toggleCardDetails(card) {
-        const details = card.querySelector('.details');
-        details.style.display = details.style.display === 'block' ? 'none' : 'block';
-    }
-</script>
 </html>
